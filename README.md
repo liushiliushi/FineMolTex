@@ -1,5 +1,5 @@
 
-The complete repository with dataset and checkpoints can be found in https://anonymous.4open.science/r/FineMolTex-A388/.
+The complete repository with dataset and checkpoints can be found in https://anonymous.4open.science/status/FineMolTex-2266.
 
 ## 1 Environment
 
