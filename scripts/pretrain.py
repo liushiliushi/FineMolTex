@@ -79,7 +79,7 @@ def save_model(save_best, epoch=None):
     if args.output_model_dir is not None:
         save_path = "checkpoints/{}".format(args.output_model_dir)
         if not os.path.exists(save_path):
-            # 如果目录不存在，则创建它
+
             os.makedirs(save_path)
 
         if save_best:

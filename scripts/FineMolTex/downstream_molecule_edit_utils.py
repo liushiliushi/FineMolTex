@@ -249,7 +249,7 @@ def load_language_molecule_and_edit_models2(args, config):
         molecule_dim_MoleculeSTM = 300
 
 
-    model_MoleculeSTM = BertForMultiModalPreTraining2(config).to(args.device)
+    model_MoleculeSTM = BertForMultiModalPreTraining(config).to(args.device)
     input_model_path = os.path.join("checkpoints/{}".format(args.MoleculeSTM_model_dir),
                                     "multi_model_{}.pth".format(args.last_epoch))
     print("Loading from {}...".format(input_model_path))
@@ -387,9 +387,9 @@ def evaluate_SMILES_list(SMILES_list, description):
                 value_list.append(value)
                 print("{} & {:.5f}".format(SMILES, value))
         if value_list[0] > value_list[2]:
-            answer = [True, value_list[0], value_list[2]]
+            answer = [True]
         else:
-            answer = [False, value_list[0], value_list[2]]
+            answer = [False]
 
     elif "insoluble" in description:
         props = ["MolLogP"]
@@ -401,9 +401,10 @@ def evaluate_SMILES_list(SMILES_list, description):
                 value_list.append(value)
                 print("{} & {:.5f}".format(SMILES, value))
         if value_list[0] < value_list[2]:
-            answer = [True, value_list[0], value_list[2]]
+            answer = [True]
         else:
-            answer = [False, value_list[0], value_list[2]]
+            # answer = [False, value_list[0], value_list[2]]
+            answer = [False]
 
     elif description in ["This molecule is more like a drug.", "This molecule is like a drug."]:
         props = ["qed"]
