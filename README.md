@@ -44,7 +44,7 @@ MegaMolBART can be downloaded by running `downsload_MegaBolBART.sh`.
 
 ### FineMolTex
 
-Checkpoints of FineMolTex can be downloaded from [https://drive.google.com/file/d/1Z9CRestbvwAQxxNFy7gozROgNCcs4w8F/view?usp=drive_link](https://drive.google.com/file/d/1Z9CRestbvwAQxxNFy7gozROgNCcs4w8F/view?usp=drive_link)
+Checkpoints of FineMolTex can be downloaded from [https://drive.google.com/file/d/14XjIcRAGJBHVOYYsEuCOB1FzscgCcSXH/view?usp=drive_link](https://drive.google.com/file/d/14XjIcRAGJBHVOYYsEuCOB1FzscgCcSXH/view?usp=drive_link)
 
 ### Pretraining
 
@@ -57,13 +57,13 @@ python pretrain.py --dataset PubChemSTM --input_model_dir modelNone --output_mod
 **DrugBank-Description**
 
 ```
-python retrieval_Description_Pharmacodynamics.py --task=molecule_description_removed_PubChem --molecule_type=Motif --input_model_dir=model --last_epoch=20 --config_file=config/config.json --device=2 --output_model_dir=modeltmp
+python retrieval_Description_Pharmacodynamics.py --task=molecule_description_removed_PubChem --molecule_type=Motif --input_model_dir=model_final --last_epoch=10 --config_file=config/config.json --device=2 --output_model_dir=modeltmp
 ```
 
 **DrugBank-Pharmacodynamics**
 
 ```
-python retrieval_Description_Pharmacodynamics.py --task=molecule_pharmacodynamics_removed_PubChem --molecule_type=Motif --input_model_dir=model --last_epoch=20 --config_file=config/config.json --device=2 --output_model_dir=modeltmp
+python retrieval_Description_Pharmacodynamics.py --task=molecule_pharmacodynamics_removed_PubChem --molecule_type=Motif --input_model_dir=model_final --last_epoch=10 --config_file=config/config.json --device=2 --output_model_dir=modeltmp
 ```
 
 **DrugBank-ATC**
