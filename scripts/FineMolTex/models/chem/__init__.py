@@ -1,1 +1,1 @@
-from MoleculeSTM.models.chem.tuning import load_chem_gnn_model
+from FineMolTex.models.chem.tuning import load_chem_gnn_model

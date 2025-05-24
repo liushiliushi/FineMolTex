@@ -220,4 +220,25 @@ def do_CL_eval(X, Y, neg_Y, args):
     CL_acc = pred.eq(labels).sum().detach().cpu().item() * 1. / B
     return CL_loss, CL_conf, CL_acc
 
+def get_token_importance(sequence_output_t, pooled_output_t):
+    """
+    计算每个token对pooled output的重要程度
+
+    Args:
+        sequence_output_t: shape [batch_size, seq_length, hidden_size]
+        pooled_output_t: shape [batch_size, hidden_size]
+
+    Returns:
+        attention_weights: shape [batch_size, seq_length]
+    """
+
+    sequence_output_norm = F.normalize(sequence_output_t, p=2, dim=-1)  # [batch_size, seq_length, hidden_size]
+    pooled_output_norm = F.normalize(pooled_output_t, p=2, dim=-1)     # [batch_size, hidden_size]
+
+    cosine_scores = torch.matmul(sequence_output_norm, pooled_output_norm.unsqueeze(2))  # [batch_size, seq_length, 1]
+    cosine_scores = cosine_scores.squeeze(-1)  # [batch_size, seq_length]
+
+    attention_weights = F.softmax(cosine_scores, dim=-1)
+
+    return attention_weights
 

@@ -15,7 +15,6 @@ from torch_geometric.loader import DataLoader as pyg_DataLoader
 
 from transformers import AutoModel, AutoTokenizer
 from FineMolTex.datasets import DrugBank_Datasets_SMILES_ATC, DrugBank_Datasets_Graph_ATC, DrugBank_Datasets_Graph_ATC_Sub
-# from MoleculeSTM.models.mega_molbart.mega_mol_bart import MegaMolBART
 from FineMolTex.models import GNN, GNN_graphpred, GNN_motifpred, BertConnectionLayer, BertPreTrainingHeads, BertForMultiModalPreTraining,  BertConfig
 from FineMolTex.utils import prepare_text_tokens, get_molecule_repr_MoleculeSTM, get_molecule_repr_MoleculeSTM2, freeze_network
 

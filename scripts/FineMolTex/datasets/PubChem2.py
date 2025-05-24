@@ -3,7 +3,7 @@ from torch_geometric.data import Dataset, InMemoryDataset, Data
 import os
 import random
 from itertools import repeat
-from MoleculeSTM.datasets.utils import mol_to_graph_data_obj_simple, get_positions, tree_decomp, brics_decomp, get_clique_mol, get_smiles
+from FineMolTex.datasets.utils import mol_to_graph_data_obj_simple, get_positions, tree_decomp, brics_decomp, get_clique_mol, get_smiles
 from rdkit import Chem
 
 

@@ -10,8 +10,8 @@ from rdkit import Chem
 from rdkit.Chem.Draw import rdMolDraw2D
 import numpy as np
 
-from MoleculeSTM.datasets.chem_utils import smi2mol, mol2smi
-from MoleculeSTM.datasets.chem_utils import get_submol, get_submol_atom_map
+from FineMolTex.datasets.chem_utils import smi2mol, mol2smi
+from FineMolTex.datasets.chem_utils import get_submol, get_submol_atom_map
 
 
 class SubgraphNode:

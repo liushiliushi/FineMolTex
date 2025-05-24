@@ -4,7 +4,7 @@ from functools import singledispatch
 from typing import List
 
 import numpy as np
-from MoleculeSTM.cuchemcommon.data import GenerativeWfDao
+from FineMolTex.cuchemcommon.data import GenerativeWfDao
 from rdkit.Chem import PandasTools, CanonSmiles
 
 logger = logging.getLogger(__name__)

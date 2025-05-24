@@ -9,10 +9,10 @@ import argparse
 import multiprocessing as mp
 from tqdm import tqdm
 
-from MoleculeSTM.datasets.chem_utils import smi2mol, mol2smi, get_submol
-from MoleculeSTM.datasets.chem_utils import cnt_atom, MAX_VALENCE
+from FineMolTex.datasets.chem_utils import smi2mol, mol2smi, get_submol
+from FineMolTex.datasets.chem_utils import cnt_atom, MAX_VALENCE
 # from utils.logger import print_log
-from MoleculeSTM.datasets.molecule import Molecule
+from FineMolTex.datasets.molecule import Molecule
 
 
 

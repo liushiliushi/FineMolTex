@@ -422,6 +422,4 @@ if __name__ == "__main__":
     row_m = ", ".join(["{:.4f}".format(x * 100) for x in initial_test_acc_list_m])
     print("results t,", row_t, "results m", row_m)
     str_content = "Des: results t, {}, results m, {}\n".format(row_t, row_m)
-    with open('images/testsbash/{}/{}.txt'.format(result_dir, args.output_model_dir), 'a') as file:
-        file.write(str_content)
     sys.exit()

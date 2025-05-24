@@ -12,7 +12,7 @@ from rdkit.Chem import AllChem, Descriptors
 from rdkit.Chem.rdMolDescriptors import GetMorganFingerprintAsBitVect
 from torch.utils import data
 from torch_geometric.data import (Data, InMemoryDataset, download_url, extract_zip)
-from MoleculeSTM.datasets.utils import mol_to_graph_data_obj_simple, get_positions, tree_decomp, brics_decomp, get_clique_mol, get_smiles
+from FineMolTex.datasets.utils import mol_to_graph_data_obj_simple, get_positions, tree_decomp, brics_decomp, get_clique_mol, get_smiles
 
 
 def mol_to_graph_data_obj_simple(mol):

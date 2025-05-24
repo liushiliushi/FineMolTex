@@ -3,9 +3,9 @@ from itertools import chain, repeat
 import pandas as pd
 import torch
 from torch_geometric.data import InMemoryDataset, Data
-from MoleculeSTM.datasets.utils import mol_to_graph_data_obj_simple, get_positions, tree_decomp, brics_decomp, get_clique_mol, get_smiles
+from FineMolTex.datasets.utils import mol_to_graph_data_obj_simple, get_positions, tree_decomp, brics_decomp, get_clique_mol, get_smiles
 from rdkit.Chem import AllChem
-from MoleculeSTM.datasets.mol_bpe import Tokenizer
+from FineMolTex.datasets.mol_bpe import Tokenizer
 import random
 
 

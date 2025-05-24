@@ -11,9 +11,9 @@ from rdkit import Chem
 from rdkit import RDLogger
 RDLogger.DisableLog('rdApp.*')
 
-from MoleculeSTM.datasets.utils import mol_to_graph_data_obj_simple
+from FineMolTex.datasets.utils import mol_to_graph_data_obj_simple
 
-from MoleculeSTM.datasets import PubChemSTM_Datasets_SMILES
+from FineMolTex.datasets import PubChemSTM_Datasets_SMILES
 
 
 class PubChemSTM_Datasets_Raw_SMILES(PubChemSTM_Datasets_SMILES):

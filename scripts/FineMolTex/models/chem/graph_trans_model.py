@@ -3,7 +3,7 @@ import torch.nn as nn
 from torch_geometric.utils import to_dense_batch
 import torch.nn.functional as F
 from torch_geometric.nn import MessagePassing, global_mean_pool, global_add_pool
-import MoleculeSTM.models.chem.custom_transformer as custom_nn
+import FineMolTex.models.chem.custom_transformer as custom_nn
 
 if True:
     # in graphcl:

@@ -7,7 +7,7 @@ from itertools import repeat
 import torch
 from torch_geometric.data import Data, InMemoryDataset
 
-from MoleculeSTM.datasets.utils import mol_to_graph_data_obj_simple, get_positions, tree_decomp, brics_decomp, get_clique_mol, get_smiles
+from FineMolTex.datasets.utils import mol_to_graph_data_obj_simple, get_positions, tree_decomp, brics_decomp, get_clique_mol, get_smiles
 
 
 

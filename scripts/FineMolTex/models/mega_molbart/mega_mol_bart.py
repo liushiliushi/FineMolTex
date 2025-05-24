@@ -15,7 +15,7 @@ import pandas as pd
 from megatron.checkpointing import load_checkpoint
 import megatron.checkpointing as megatron_checkpointing
 from megatron.global_vars import set_global_variables
-from MoleculeSTM.cuchemcommon.workflow import BaseGenerativeWorkflow, add_jitter
+from FineMolTex.cuchemcommon.workflow import BaseGenerativeWorkflow, add_jitter
 from .decoder import DecodeSampler
 from megatron import get_args, mpu
 from megatron.initialize import initialize_megatron

@@ -17,7 +17,7 @@ import rdkit.Chem as Chem
 
 RDLogger.DisableLog('rdApp.*')
 
-from MoleculeSTM.datasets.utils import mol_to_graph_data_obj_simple, get_positions, tree_decomp, brics_decomp, get_clique_mol, get_smiles
+from FineMolTex.datasets.utils import mol_to_graph_data_obj_simple, get_positions, tree_decomp, brics_decomp, get_clique_mol, get_smiles
 
 class RetrievalDataset(InMemoryDataset):
     def __init__(self, root, args):

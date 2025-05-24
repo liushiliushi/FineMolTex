@@ -14,7 +14,7 @@ import rdkit.Chem as Chem
 from rdkit.Chem import BRICS
 RDLogger.DisableLog('rdApp.*')
 
-from MoleculeSTM.datasets.utils import mol_to_graph_data_obj_simple
+from FineMolTex.datasets.utils import mol_to_graph_data_obj_simple
 
 
 class PubChemSTM_Datasets_Only_SMILES(Dataset):

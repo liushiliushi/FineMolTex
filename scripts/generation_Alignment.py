@@ -14,7 +14,7 @@ from torch_geometric.loader import DataLoader as pyg_DataLoader
 from FineMolTex.utils import get_molecule_repr_MoleculeSTM
 from FineMolTex.models import MLP
 from FineMolTex.downstream_molecule_edit_utils import load_molecule_models, load_molecule_models2
-from MoleculeSTM.utils import freeze_network
+from FineMolTex.utils import freeze_network
 from FineMolTex.datasets import ZINC250K_Dataset_SMILES, ZINC250K_Dataset_Graph,  ZINC250K_Dataset_GraphMotif, ZINC250K_Dataset_GraphMotifSub
 from FineMolTex.models import GNN, GNN_graphpred, GNN_motifpred, BertConnectionLayer, BertPreTrainingHeads, BertForMultiModalPreTraining,  BertConfig
 from FineMolTex.utils import prepare_text_tokens, get_molecule_repr_MoleculeSTM, get_molecule_repr_MoleculeSTM2, freeze_network
