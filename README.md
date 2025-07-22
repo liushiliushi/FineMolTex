@@ -1,3 +1,8 @@
+# FineMolTex
+
+This is the official repository of KDD 2025 paper Advancing Molecular Graph-Text Pre-training via Fine-grained Alignment.
+
+
 
 ## 1 Environment
 
